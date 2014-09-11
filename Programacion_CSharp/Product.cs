@@ -21,7 +21,7 @@ namespace Programacion_CSharp
         public static List<Productos> Show()
         {
             List<Productos> listaProductos = new List<Productos>() 
-            { new Productos{ id=1, marca="colun", nombre="leche descremada", stock=25, valor=850 },
+            { new Productos{ id=1, marca="Colun", nombre="leche descremada", stock=25, valor=850 },
               new Productos{ id=2, marca="Pepsi", nombre="Bebida", stock=45, valor=1300 },
               new Productos{ id=3, marca="Lays", nombre="Papas fritas", stock=53, valor=1890 },
               new Productos{ id=4, marca="Kunstmann", nombre="Cerveza Rubia", stock=322, valor=5050 },
