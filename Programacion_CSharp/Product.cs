@@ -31,6 +31,7 @@ namespace Programacion_CSharp
               new Productos{ id=8, marca="Colun", tipo="Yoghurt", stock=200, valor=1030 },
               new Productos{ id=9, marca="Vital", tipo="Agua Mineral", stock=88, valor=850 },
               new Productos{ id=10, marca="Kross", tipo="Cerveza", stock=145, valor=1890 },
+              new Productos{ id=11, marca="Fanta", tipo="Bebida", stock=105, valor=1340 },
             };
 
             return listaProductos;
