@@ -10,9 +10,9 @@ namespace Programacion_CSharp
     {
         static void Main(string[] args)
         {
-            Linq.Select.querySelect();
-            Linq.Where.queryWhere();
-
+            //Linq.Select.querySelect();
+            //Linq.Where.queryWhere();
+            Linq.Group.queryGropup();
         }
 
 

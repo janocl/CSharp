@@ -20,8 +20,8 @@ namespace Programacion_CSharp.Linq
 
             foreach (var item in query)
             {
-                Console.WriteLine("id = {0}, Nombre = {1}, Marca = {2}, Valor = {3}, Stock = {4}",
-                                    item.id, item.nombre, item.marca, item.valor, item.stock);
+                Console.WriteLine("id = {0}, Tipo = {1}, Marca = {2}, Valor = {3}, Stock = {4}",
+                                    item.id, item.tipo, item.marca, item.valor, item.stock);
             }
 
             Console.ReadKey();
