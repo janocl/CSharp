@@ -11,14 +11,14 @@ namespace Programacion_CSharp.Linq
         public static void querySelect()
         {
 
-            var query = from p in Product.Show()
+            var query = from p in Producto.Show()
                         select p;
 
 
             foreach (var item in query)
             {
                 Console.WriteLine("id = {0}, Tipo = {1}, Marca = {2}, Valor = {3}, Stock = {4}",
-                                    item.id, item.tipo, item.marca, item.valor, item.stock);
+                                    item.id, item.Tipo, item.Marca, item.Valor, item.Stock);
             }
 
             Console.ReadKey();

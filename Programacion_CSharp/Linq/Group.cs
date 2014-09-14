@@ -11,8 +11,8 @@ namespace Programacion_CSharp.Linq
 
         public static void queryGropup()
         {
-            var query = from p in Product.Show()
-                        group p by p.tipo;
+            var query = from p in Producto.Show()
+                        group p by p.Tipo;
 
 
 
@@ -24,7 +24,7 @@ namespace Programacion_CSharp.Linq
 
                 foreach (var grupo in _tipo)
                 {
-                    Console.WriteLine("\t Marca = {0}", grupo.marca);
+                    Console.WriteLine("\t Marca = {0}", grupo.Marca);
                 }
 
             }

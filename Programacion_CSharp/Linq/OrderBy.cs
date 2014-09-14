@@ -10,15 +10,15 @@ namespace Programacion_CSharp.Linq
     {
         public static void queryOrderBy()
         {
-            var query = from p in Product.Show()
-                        where p.id > 0
-                        orderby p.marca ascending
+            var query = from p in Producto.Show()
+                        where p.IdProducto > 0
+                        orderby p.Marca ascending
                         select p;
 
             Console.WriteLine("\nMarcas Ordenadas Alfabeticamente.");
             foreach (var item in query)
             {
-                Console.WriteLine("Marca > {0}", item.marca);
+                Console.WriteLine("Marca > {0}", item.Marca);
             }
 
             Console.ReadKey();

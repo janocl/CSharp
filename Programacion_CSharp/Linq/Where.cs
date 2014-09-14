@@ -11,15 +11,15 @@ namespace Programacion_CSharp.Linq
         public static void queryWhere()
         {
 
-            var query = from p in Product.Show()
-                        where p.stock < 100 && p.valor > 1000
+            var query = from p in Producto.Show()
+                        where p.Stock < 100 && p.Valor > 1000
                         select p;
 
 
             foreach (var item in query)
             {
                 Console.WriteLine("id = {0}, Tipo = {1}, Marca = {2}, Valor = {3}, Stock = {4}",
-                                    item.id, item.tipo, item.marca, item.valor, item.stock);
+                                    item.id, item.Tipo, item.Marca, item.Valor, item.Stock);
             }
 
             Console.ReadKey();
