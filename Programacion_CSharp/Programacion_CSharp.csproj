@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Linq\Group.cs" />
+    <Compile Include="Linq\OrderBy.cs" />
     <Compile Include="Linq\Select.cs" />
     <Compile Include="Linq\Where.cs" />
     <Compile Include="Product.cs" />
