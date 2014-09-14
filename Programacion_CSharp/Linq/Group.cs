@@ -17,14 +17,14 @@ namespace Programacion_CSharp.Linq
 
 
             Console.WriteLine("Que Marcas de Cada Tipo de Producto Existen...\n");
-
-            foreach (var GruposTipoDeMarcas in query)
+            
+            foreach (var _tipo in query)
             {
-                Console.WriteLine("Tipo >> {0}", GruposTipoDeMarcas.Key);
+                Console.WriteLine("Tipo >> {0}", _tipo.Key);
 
-                foreach (var b in GruposTipoDeMarcas)
+                foreach (var grupo in _tipo)
                 {
-                    Console.WriteLine("\t Marca = {0}", b.marca);
+                    Console.WriteLine("\t Marca = {0}", grupo.marca);
                 }
 
             }
