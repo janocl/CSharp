@@ -10,28 +10,28 @@ namespace Programacion_CSharp
     {
         public class Productos
         {
-            public int id { get; set; }
-            public string tipo { get; set; }
-            public string marca { get; set; }
-            public int valor { get; set; }
-            public int stock { get; set; }
-
+            public int IdProducto { get; set; }
+            public string Marca { get; set; }
+            public string Tipo { get; set; }
+            public int Valor { get; set; }
+            public int Stock { get; set; }
+            public int IdVenta { get; set; }
         }
 
         public static List<Productos> Show()
         {
             List<Productos> listaProductos = new List<Productos>() 
-            { new Productos{ id=1, marca="Colun", tipo="Leche", stock=25, valor=850 },
-              new Productos{ id=2, marca="Pepsi", tipo="Bebida", stock=45, valor=1300 },
-              new Productos{ id=3, marca="Lays", tipo="Papas fritas", stock=53, valor=1890 },
-              new Productos{ id=4, marca="Kunstmann", tipo="Cerveza", stock=322, valor=5050 },
-              new Productos{ id=5, marca="Carozzi", tipo="Spaghetti", stock=500, valor=1599 },
-              new Productos{ id=6, marca="Coca-Cola", tipo="Bebida", stock=450, valor=1620 },
-              new Productos{ id=7, marca="Quillayes", tipo="Yoghurt", stock=100, valor=2290 },
-              new Productos{ id=8, marca="Colun", tipo="Yoghurt", stock=200, valor=1030 },
-              new Productos{ id=9, marca="Vital", tipo="Agua Mineral", stock=88, valor=850 },
-              new Productos{ id=10, marca="Kross", tipo="Cerveza", stock=145, valor=1890 },
-              new Productos{ id=11, marca="Fanta", tipo="Bebida", stock=105, valor=1340 },
+            { new Productos{ IdProducto=1, Marca="Colun", Tipo="Leche", Stock=25, Valor=850 },
+              new Productos{ IdProducto=2, Marca="Pepsi", Tipo="Bebida", Stock=45, Valor=1300 },
+              new Productos{ IdProducto=3, Marca="Lays", Tipo="Papas fritas", Stock=53, Valor=1890 },
+              new Productos{ IdProducto=4, Marca="Kunstmann", Tipo="Cerveza", Stock=322, Valor=5050 },
+              new Productos{ IdProducto=5, Marca="Carozzi", Tipo="Spaghetti", Stock=500, Valor=1599 },
+              new Productos{ IdProducto=6, Marca="Coca-Cola", Tipo="Bebida", Stock=450, Valor=1620 },
+              new Productos{ IdProducto=7, Marca="Quillayes", Tipo="Yoghurt", Stock=100, Valor=2290 },
+              new Productos{ IdProducto=8, Marca="Colun", Tipo="Yoghurt", Stock=200, Valor=1030 },
+              new Productos{ IdProducto=9, Marca="Vital", Tipo="Agua Mineral", Stock=88, Valor=850 },
+              new Productos{ IdProducto=10, Marca="Kross", Tipo="Cerveza", Stock=145, Valor=1890 },
+              new Productos{ IdProducto=11, Marca="Fanta", Tipo="Bebida", Stock=105, Valor=1340 },
             };
 
             return listaProductos;
