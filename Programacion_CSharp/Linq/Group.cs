@@ -16,7 +16,7 @@ namespace Programacion_CSharp.Linq
 
 
 
-            Console.WriteLine("Que Marcas de Cada Tipo de Producto Existen...\n");
+            Console.WriteLine("\nQue Marcas de Cada Tipo de Producto Existen...\n");
             
             foreach (var _tipo in query)
             {
