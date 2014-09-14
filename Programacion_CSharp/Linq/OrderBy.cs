@@ -15,9 +15,10 @@ namespace Programacion_CSharp.Linq
                         orderby p.marca ascending
                         select p;
 
+            Console.WriteLine("\nMarcas Ordenadas Alfabeticamente.");
             foreach (var item in query)
             {
-                Console.WriteLine("{0}", item.marca);
+                Console.WriteLine("Marca > {0}", item.marca);
             }
 
             Console.ReadKey();
