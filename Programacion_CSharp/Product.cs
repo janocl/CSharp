@@ -15,7 +15,7 @@ namespace Programacion_CSharp
             public string Tipo { get; set; }
             public int Valor { get; set; }
             public int Stock { get; set; }
-            public int IdVenta { get; set; }
+            public int IdProveedor { get; set; }
         }
 
         public static List<Productos> Show()
