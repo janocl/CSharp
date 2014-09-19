@@ -14,6 +14,7 @@ namespace Programacion_CSharp
             Linq.Where.queryWhere();
             Linq.Group.queryGropup();
             Linq.OrderBy.queryOrderBy();
+            Linq.Join.queryJoin();
         }
 
 
