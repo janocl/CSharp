@@ -25,7 +25,6 @@ namespace Programacion_CSharp.Linq
                 }
 
             }
-
             Console.ReadKey();
         
         }
