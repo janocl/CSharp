@@ -14,7 +14,6 @@ namespace Programacion_CSharp.Linq
             var query = from p in Producto.Show()
                         select p;
 
-
             foreach (var item in query)
             {
                 Console.WriteLine("id = {0}, Tipo = {1}, Marca = {2}, Valor = {3}, Stock = {4}",
