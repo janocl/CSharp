@@ -20,7 +20,6 @@ namespace Programacion_CSharp.Linq
             {
                 Console.WriteLine("Marca > {0}", item.Marca);
             }
-
             Console.ReadKey();
         }
 
