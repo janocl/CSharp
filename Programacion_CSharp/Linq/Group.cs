@@ -8,13 +8,10 @@ namespace Programacion_CSharp.Linq
 {
     class Group
     {
-
-        public static void queryGropup()
+        public static void queryGroup()
         {
             var query = from p in Producto.Show()
                         group p by p.Tipo;
-
-
 
             Console.WriteLine("\nQue Marcas de Cada Tipo de Producto Existen...\n");
             

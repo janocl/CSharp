@@ -12,9 +12,10 @@ namespace Programacion_CSharp
         {
             Linq.Select.querySelect();
             Linq.Where.queryWhere();
-            Linq.Group.queryGropup();
+            Linq.Group.queryGroup();
             Linq.OrderBy.queryOrderBy();
             Linq.Join.queryJoin();
+            Linq.GroupAdvanced.queryGroupAdvanced();
         }
 
 
