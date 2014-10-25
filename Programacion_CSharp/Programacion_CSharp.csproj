@@ -45,6 +45,7 @@
     <Compile Include="Linq\Group.cs" />
     <Compile Include="Linq\GroupAdvanced.cs" />
     <Compile Include="Linq\Join.cs" />
+    <Compile Include="Linq\JoinAdvanced.cs" />
     <Compile Include="Linq\OrderBy.cs" />
     <Compile Include="Linq\Select.cs" />
     <Compile Include="Linq\Where.cs" />

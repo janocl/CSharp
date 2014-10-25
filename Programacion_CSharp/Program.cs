@@ -16,6 +16,7 @@ namespace Programacion_CSharp
             Linq.OrderBy.queryOrderBy();
             Linq.Join.queryJoin();
             Linq.GroupAdvanced.queryGroupAdvanced();
+            Linq.JoinAdvanced.queryJoinAdvanced();
         }
 
 
