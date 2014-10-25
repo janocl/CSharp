@@ -15,7 +15,6 @@ namespace Programacion_CSharp.Linq
                         where p.Stock < 100 && p.Valor > 1000
                         select p;
 
-
             foreach (var item in query)
             {
                 Console.WriteLine("id = {0}, Tipo = {1}, Marca = {2}, Valor = {3}, Stock = {4}",
