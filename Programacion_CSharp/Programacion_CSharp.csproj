@@ -49,6 +49,7 @@
     <Compile Include="Linq\OrderBy.cs" />
     <Compile Include="Linq\Select.cs" />
     <Compile Include="Linq\Where.cs" />
+    <Compile Include="Pedido.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
