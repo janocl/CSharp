@@ -12,45 +12,45 @@ namespace Programacion_CSharp.Linq
         {
             var query = from proveedor in Proveedor.Show()
                         join producto in Producto.Show()
-                        on proveedor.IdProveedor equals producto.IdProducto
+                            on proveedor.IdProveedor equals producto.IdProducto
                         group proveedor by new
                         {
                             proveedor.IdProveedor,
                             proveedor.Nombre,
                             proveedor.Telefono
-                        } into g1
+                        } into productosDeProveedor
                         select new
                         {
-                            provId = g1.Key.IdProveedor,
-                            provNombre = g1.Key.Nombre,
-                            provTelefono = g1.Key.Telefono,
+                            provId = productosDeProveedor.Key.IdProveedor,
+                            provNombre = productosDeProveedor.Key.Nombre,
+                            provTelefono = productosDeProveedor.Key.Telefono,
                             ListaPedidos = from producto in Producto.Show()
-                            join pedido in Pedido.Show()
-                            on producto.IdProducto equals pedido.IdPedido
-                            group pedido by new
-                            {
-                                pedido.IdPedido,
-                                pedido.Fecha,
-                                pedido.Destinatario,
-                                pedido.Cantidad
-                            } into g2
+                                            join pedido in Pedido.Show()
+                                            on producto.IdProducto equals pedido.IdPedido
+                                            group pedido by new
+                                            {
+                                                pedido.IdPedido,
+                                                pedido.Fecha,
+                                                pedido.Destinatario,
+                                                pedido.Cantidad
+                                            } into pedidos
 
-                            select new {
-                                provId = g1.Key.IdProveedor,
-                                provNombre = g1.Key.Nombre,
-                                provTelefono = g1.Key.Telefono,
-                                pedId = g2.Key.IdPedido,
-                                pedFecha = g2.Key.Fecha,
-                                pedDestinatario = g2.Key.Destinatario,
-                                pedCantidad = g2.Key.Cantidad
-                            }
+                                            select new {
+                                                provId = productosDeProveedor.Key.IdProveedor,
+                                                provNombre = productosDeProveedor.Key.Nombre,
+                                                provTelefono = productosDeProveedor.Key.Telefono,
+                                                pedId = pedidos.Key.IdPedido,
+                                                pedFecha = pedidos.Key.Fecha,
+                                                pedDestinatario = pedidos.Key.Destinatario,
+                                                pedCantidad = pedidos.Key.Cantidad
+                                            }
                         };
 
 
 
             foreach (var item in query)
             {
-                Console.WriteLine("{0}", item);
+                Console.WriteLine("{0}", item.ListaPedidos);
             }
             Console.ReadKey();
         }

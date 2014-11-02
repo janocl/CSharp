@@ -10,12 +10,12 @@ namespace Programacion_CSharp
     {
         static void Main(string[] args)
         {
-            Linq.Select.querySelect();
-            Linq.Where.queryWhere();
-            Linq.OrderBy.queryOrderBy();
-            Linq.Group.queryGroup();
-            Linq.GroupAdvanced.queryGroupAdvanced();
-            Linq.Join.queryJoin();
+            //Linq.Select.querySelect();
+            //Linq.Where.queryWhere();
+            //Linq.OrderBy.queryOrderBy();
+            //Linq.Group.queryGroup();
+            //Linq.GroupAdvanced.queryGroupAdvanced();
+            //Linq.Join.queryJoin();
             Linq.JoinAdvanced.queryJoinAdvanced();
             
             
