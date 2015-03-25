@@ -10,47 +10,40 @@ namespace Programacion_CSharp.Linq
     {
         public static void queryJoinAdvanced()
         {
-            var query = from proveedor in Proveedor.Show()
-                        join producto in Producto.Show()
-                            on proveedor.IdProveedor equals producto.IdProducto
-                        group proveedor by new
-                        {
-                            proveedor.IdProveedor,
-                            proveedor.Nombre,
-                            proveedor.Telefono
-                        } into productosDeProveedor
-                        select new
-                        {
-                            provId = productosDeProveedor.Key.IdProveedor,
-                            provNombre = productosDeProveedor.Key.Nombre,
-                            provTelefono = productosDeProveedor.Key.Telefono,
-                            ListaPedidos = from producto in Producto.Show()
-                                            join pedido in Pedido.Show()
-                                            on producto.IdProducto equals pedido.IdPedido
-                                            group pedido by new
-                                            {
-                                                pedido.IdPedido,
-                                                pedido.Fecha,
-                                                pedido.Destinatario,
-                                                pedido.Cantidad
-                                            } into pedidos
-
-                                            select new {
-                                                provId = productosDeProveedor.Key.IdProveedor,
-                                                provNombre = productosDeProveedor.Key.Nombre,
-                                                provTelefono = productosDeProveedor.Key.Telefono,
-                                                pedId = pedidos.Key.IdPedido,
-                                                pedFecha = pedidos.Key.Fecha,
-                                                pedDestinatario = pedidos.Key.Destinatario,
-                                                pedCantidad = pedidos.Key.Cantidad
-                                            }
-                        };
+            var query = (from proveedor in Proveedor.Show()
+                         join producto in Producto.Show()
+                         on proveedor.IdProveedor equals producto.IdProveedor
+                         select new
+                         {
+                             proveedor.IdProveedor,
+                             proveedor.Nombre,
+                             proveedor.Telefono,
+                             producto.IdProducto,
+                             producto.Tipo,
+                             producto.Marca,
+                             producto.Valor
+                         } into g1
+                             join pedido in Pedido.Show()
+                             on g1.IdProducto equals pedido.IdProducto
+                                 select new
+                                 {
+                                     g1.IdProveedor,
+                                     g1.Nombre,
+                                     g1.Telefono,
+                                     g1.IdProducto,
+                                     g1.Tipo,
+                                     g1.Marca,
+                                     g1.Valor,
+                                     pedido.Fecha,
+                                     pedido.Cantidad,
+                                     pedido.Destinatario
+                                 }).OrderBy(x=>x.IdProveedor);
 
 
-
+            Console.WriteLine("\nCombinación de consulta entre 3 entidades");
             foreach (var item in query)
             {
-                Console.WriteLine("{0}", item.ListaPedidos);
+                Console.WriteLine("{0}", item);
             }
             Console.ReadKey();
         }
