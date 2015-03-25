@@ -16,7 +16,8 @@ namespace Programacion_CSharp
             //Linq.Group.queryGroup();
             //Linq.GroupAdvanced.queryGroupAdvanced();
             //Linq.Join.queryJoin();
-            Linq.JoinAdvanced.queryJoinAdvanced();
+            //Linq.JoinAdvanced.queryJoinAdvanced();
+            Linq.Any.queryAny();
             
             
         }
