@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Linq\All.cs" />
     <Compile Include="Linq\Any.cs" />
     <Compile Include="Linq\Contains.cs" />
     <Compile Include="Linq\Group.cs" />
