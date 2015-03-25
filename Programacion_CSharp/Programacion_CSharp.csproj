@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Linq\Any.cs" />
+    <Compile Include="Linq\Contains.cs" />
     <Compile Include="Linq\Group.cs" />
     <Compile Include="Linq\GroupAdvanced.cs" />
     <Compile Include="Linq\Join.cs" />
