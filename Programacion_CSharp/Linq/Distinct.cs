@@ -12,9 +12,14 @@ namespace Programacion_CSharp.Linq
 
         public static void queryDistinct()
         {
-            var query = Producto.Show()
-                        .Select(x => x.Tipo)
-                        .Distinct();
+            var query = (from p in Producto.Show()
+                        group p by p.Tipo into g1
+                        select new
+                        {
+                            g1.First().IdProducto,
+                            g1.First().Tipo
+                        }).Distinct();
+                        
 
 
 
