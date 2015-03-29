@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programacion_CSharp
 {
-    public static class Producto
+    public class Producto
     {
         public class Productos
         {
@@ -16,6 +16,8 @@ namespace Programacion_CSharp
             public int Valor { get; set; }
             public int Stock { get; set; }
             public int IdProveedor { get; set; }
+            public List<Proveedor> listaProveedores { get; set; }
+
         }
 
         public static List<Productos> Show()

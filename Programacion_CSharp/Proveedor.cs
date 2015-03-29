@@ -6,14 +6,13 @@ using System.Threading.Tasks;
 
 namespace Programacion_CSharp
 {
-    public static class Proveedor
+    public class Proveedor
     {
         public class Proveedores 
         {
             public int IdProveedor { get; set; }
             public string Nombre { get; set; }
             public int Telefono { get; set; }
-        
         }
 
         public static List<Proveedores> Show()

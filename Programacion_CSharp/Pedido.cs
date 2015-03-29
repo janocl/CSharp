@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Programacion_CSharp
 {
-    public static class Pedido
+    public class Pedido
     {
         public class Pedidos
         {
