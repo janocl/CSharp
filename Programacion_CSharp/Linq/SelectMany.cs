@@ -11,12 +11,16 @@ namespace Programacion_CSharp.Linq
         public static void querySelectMany()
         {
 
-            var query = 
+            var query = Pedido.Show()
+                        .SelectMany(ped => ped.ListaProductos
+                            .Select(prod => prod.ListaProveedores
+                                .Select(prov => new { prov.IdProveedor, prov.Nombre })))
+                        .First();
 
 
 
 
-            Console.WriteLine("\nDistinct : Este operador sirve para eliminar elementos duplicados de una secuencia. \n");
+            Console.WriteLine("\nSelectMany : Este operador toma cada elemento que proyecta, lo convierte en una enumeración, \ny luego concatena todas las enumeraciones. \n");
             foreach (var item in query)
             {
                 Console.WriteLine(item);
