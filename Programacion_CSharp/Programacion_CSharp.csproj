@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alumno.cs" />
     <Compile Include="Linq\All.cs" />
     <Compile Include="Linq\Any.cs" />
     <Compile Include="Linq\Contains.cs" />
@@ -52,6 +53,7 @@
     <Compile Include="Linq\JoinAdvanced.cs" />
     <Compile Include="Linq\OrderBy.cs" />
     <Compile Include="Linq\Select.cs" />
+    <Compile Include="Linq\SelectMany.cs" />
     <Compile Include="Linq\Where.cs" />
     <Compile Include="Pedido.cs" />
     <Compile Include="Producto.cs" />
