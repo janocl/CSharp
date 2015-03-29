@@ -20,7 +20,7 @@ namespace Programacion_CSharp
             //Linq.Any.queryAny();
             //Linq.Contains.queryContains();
             //Linq.All.queryAll();
-            Linq.Distinct.queryDistinct();
+            //Linq.Distinct.queryDistinct();
             
             
         }

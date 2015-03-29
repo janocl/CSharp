@@ -11,7 +11,7 @@ namespace Programacion_CSharp.Linq
         public static void querySelectMany()
         {
 
-            query = 
+            var query = 
 
 
 
