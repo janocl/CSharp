@@ -22,7 +22,8 @@ namespace Programacion_CSharp
             //Linq.All.queryAll();
             //Linq.Distinct.queryDistinct();
             //Linq.SelectMany.querySelectMany();
-            Linq.Let.queryLet();
+            //Linq.Let.queryLet();
+            Linq.Sum.querySum();
             
         }
 
