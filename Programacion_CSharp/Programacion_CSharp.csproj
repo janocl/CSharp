@@ -51,6 +51,7 @@
     <Compile Include="Linq\Join.cs" />
     <Compile Include="Linq\JoinAdvanced.cs" />
     <Compile Include="Linq\Let.cs" />
+    <Compile Include="Linq\Max.cs" />
     <Compile Include="Linq\OrderBy.cs" />
     <Compile Include="Linq\Select.cs" />
     <Compile Include="Linq\SelectMany.cs" />

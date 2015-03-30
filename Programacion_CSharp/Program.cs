@@ -23,7 +23,8 @@ namespace Programacion_CSharp
             //Linq.Distinct.queryDistinct();
             //Linq.SelectMany.querySelectMany();
             //Linq.Let.queryLet();
-            Linq.Sum.querySum();
+            //Linq.Sum.querySum();
+            Linq.Max.queryMax();
             
         }
 
