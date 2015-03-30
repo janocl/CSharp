@@ -21,7 +21,8 @@ namespace Programacion_CSharp
             //Linq.Contains.queryContains();
             //Linq.All.queryAll();
             //Linq.Distinct.queryDistinct();
-            Linq.SelectMany.querySelectMany();
+            //Linq.SelectMany.querySelectMany();
+            Linq.Let.queryLet();
             
         }
 
