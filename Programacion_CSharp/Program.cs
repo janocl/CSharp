@@ -27,7 +27,8 @@ namespace Programacion_CSharp
             //Linq.Max.queryMax();
             //Linq.Min.queryMin();
             //Linq.OrderByDescending.queryOrderByDescending();
-            Linq.First.queryFirst();
+            //Linq.First.queryFirst();
+            Linq.Single.singleQuery();
             
         }
 
