@@ -26,7 +26,8 @@ namespace Programacion_CSharp
             //Linq.Sum.querySum();
             //Linq.Max.queryMax();
             //Linq.Min.queryMin();
-            Linq.OrderByDescending.queryOrderByDescending();
+            //Linq.OrderByDescending.queryOrderByDescending();
+            Linq.First.queryFirst();
             
         }
 
