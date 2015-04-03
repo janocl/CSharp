@@ -24,7 +24,8 @@ namespace Programacion_CSharp
             //Linq.SelectMany.querySelectMany();
             //Linq.Let.queryLet();
             //Linq.Sum.querySum();
-            Linq.Max.queryMax();
+            //Linq.Max.queryMax();
+            Linq.Min.queryMin();
             
         }
 
