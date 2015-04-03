@@ -20,7 +20,7 @@ namespace Programacion_CSharp.Linq
 
             Console.WriteLine("\nFirst : Este operador devuelve el primer elemento de una secuencia.\n");
 
-            Console.WriteLine(query);
+            Console.WriteLine("El primer producto que coincide con la condicion es:> {0}",query);
             Console.ReadKey();
 
         }
