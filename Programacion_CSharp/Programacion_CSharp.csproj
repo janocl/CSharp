@@ -58,6 +58,7 @@
     <Compile Include="Linq\OrderByDescending.cs" />
     <Compile Include="Linq\Select.cs" />
     <Compile Include="Linq\SelectMany.cs" />
+    <Compile Include="Linq\Single.cs" />
     <Compile Include="Linq\Sum.cs" />
     <Compile Include="Linq\Where.cs" />
     <Compile Include="Pedido.cs" />
